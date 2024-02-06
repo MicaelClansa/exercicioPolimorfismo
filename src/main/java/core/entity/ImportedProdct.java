@@ -23,10 +23,10 @@ public class ImportedProdct extends Product{
 
     @Override
     public String priceTag(){
-        return "a";
+        return String.format("%s $ %.2f (Custom fee: $ %.2f", getName(), totalPrice(), getCustomsFee());
     }
 
     public Double totalPrice(){
-        return 1.0;
+        return getPrice() + customsFee;
     }
 }

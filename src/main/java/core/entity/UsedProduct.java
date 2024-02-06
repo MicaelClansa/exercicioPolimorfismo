@@ -16,4 +16,9 @@ public class UsedProduct extends Product{
     public void setManufactureDate(String manufactureDate) {
         this.manufactureDate = manufactureDate;
     }
+
+    @Override
+    public String priceTag(){
+        return String.format("%s (used) $ %.2f (Manufacture date: %s)", getName(), getPrice(), getManufactureDate());
+    }
 }

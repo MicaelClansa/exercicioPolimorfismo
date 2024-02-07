@@ -31,4 +31,12 @@ public class Product {
     public String priceTag() {
         return String.format("%s $ %.2f %n", name, price);
     }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "name='" + name + '\'' +
+                ", price=" + price +
+                '}';
+    }
 }

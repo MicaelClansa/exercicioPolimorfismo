@@ -29,4 +29,11 @@ public class ImportedProdct extends Product{
     public Double totalPrice(){
         return getPrice() + customsFee;
     }
+
+    @Override
+    public String toString() {
+        return "ImportedProdct{" +
+                "customsFee=" + customsFee +
+                '}';
+    }
 }

@@ -1,7 +1,9 @@
 package starter;
 
+import core.service.ComunicacaoService;
+
 public class Starter {
     public static void main (String[] args){
-        System.out.println("Hello Word");
+        ComunicacaoService.interacaoComUsuario();
     }
 }

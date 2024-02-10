@@ -28,15 +28,8 @@ public class Product {
         this.price = price;
     }
 
-    public String priceTag() {
-        return String.format("%s $ %.2f %n", name, price);
+    public void priceTag() {
+        System.out.print(name + " $ " + price);
     }
 
-    @Override
-    public String toString() {
-        return "Product{" +
-                "name='" + name + '\'' +
-                ", price=" + price +
-                '}';
-    }
 }

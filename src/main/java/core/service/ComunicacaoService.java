@@ -51,7 +51,8 @@ public class ComunicacaoService {
 
         System.out.println("PRICE TAGS:");
         for(Product produto:productList){
-            System.out.println(produto);
+            produto.priceTag();
+            System.out.println();
         }
     }
 }
